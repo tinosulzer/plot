@@ -1,0 +1,42 @@
+# [build-system]
+# requires = ["hatchling"]
+# build-backend = "hatchling.build"
+
+[project]
+name = "vsplot"
+description = ''
+readme = "README.md"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+keywords = []
+authors = [
+  { name = "Valentin Sulzer", email = "valentinsulzer@hotmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+  "matplotlib",
+]
+dynamic = ["version"]
+
+[project.urls]
+Documentation = "https://github.com/tinosulzer/vsplot#readme"
+Issues = "https://github.com/tinosulzer/vsplot/issues"
+Source = "https://github.com/tinosulzer/vsplot"
+
+[project.optional-dependencies]
+dev = [
+    "black>=18.3-alpha.0",
+]
+
+[tool.black]
+line-length = 88
